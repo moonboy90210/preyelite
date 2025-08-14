@@ -1,0 +1,111 @@
+html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	font-family: 'Montserrat', Arial, sans-serif;
+	background: #000000;
+	color: #fff;
+	   display: flex;
+      flex-direction: column;
+}
+
+header {
+	padding: 20px 0 20px 0;
+	text-align: center;
+	/* background: #181818; */
+}
+
+main {
+	flex: 1;
+}
+
+header h1 {
+	font-size: 2.5rem;
+	letter-spacing: 2px;
+	margin: 0;
+	font-weight: 700;
+}
+
+header p {
+	font-size: 1.2rem;
+	color: #aaa;
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+.future {
+	position: relative;
+	height: 400px;
+	/* width: 100%; */
+}
+.future2 {
+	position: relative;
+	/* height: 400px; */
+	/* width: 100%; */
+}
+.image1 {
+	opacity: 1;
+	display: block;
+	transition: .5s ease;
+	/* backface-visibility: hidden; */
+	/* background-color: red; */
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+}
+
+.future:hover .image1 {
+	opacity: 0.3;
+}
+
+.future:hover .middle { 
+	opacity: 1;
+}
+
+.img-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.img-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Options: contain, fill, cover, scale-down, none */
+}
+form label {
+	/* display: block; */
+	/* margin-bottom: 50px; */
+	font-weight: 600;
+	font-size: 0.8rem;
+}
+
+.footer {
+left: 0;
+bottom: 0;
+width: 100%;
+/* background-color: red; */
+color: #aaa;
+text-align: center;
+padding: 30px 5px 10px 5px; 
+font-size: 0.98rem;
+}
+
+
+@media (max-width: 600px) {
+
+
+}
