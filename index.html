@@ -19,6 +19,8 @@
 
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
 
 		.bg-img {
 			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(img/bg1.jpg);
@@ -50,18 +52,20 @@
 		.signature {
 			font-family: 'Sacramento', cursive;
 		}
+
 		.txt-h {
-			font-size: 41px;
+			font-family: 'Metal Mania', cursive;
+			font-size: 2.7rem;
 		}
 
 		.txt-sh {
 			font-family: 'New Rocker', sans-serif;
-			font-size: 15px;
+			font-size: .8rem;
 		}
 
-		h1 {
+		/* h1 {
 			font-size: 2.2rem;
-		}
+		} */
 
 		.header-content {
 			margin-top: 30vh;
@@ -70,7 +74,19 @@
 		p {
 			font-size: 1.5rem;
 		}
-		
+
+		@media (min-width: 600px) {
+			.txt-h {
+			font-family: 'Metal Mania', cursive;
+			font-size: 3.7rem;
+		}
+
+		.txt-sh {
+			font-family: 'New Rocker', sans-serif;
+			font-size: 1.1rem;
+		}
+
+		}
 	</style>
 </head>
 
@@ -82,7 +98,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center header-content">
-					<h1 class="pb-3 txt-h">Preye Lite Studios</h1>
+					<h1 class="pb-3 txt-h fs-l">Preye Lite Studios</h1>
 					<p class="pb-5 txt-sh">Capturing Moments, Creating Memories.<br /></p>
 					<!-- <p class="pb-5 txt-sh">Portrait, Event & Lifestyle Photography<br /></p> -->
 					<a href="/work.html" class="btn btn-light px-4 py-2 rounded-5 "><strong>Portfolio</strong></a>
