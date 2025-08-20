@@ -158,3 +158,6 @@ rightBtn.addEventListener('click', (e) => {
 	e.stopPropagation();
 	if (currentIndex < imageArray.length - 1) showImage(currentIndex + 1);
 });
+
+
+
