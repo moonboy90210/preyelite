@@ -45,8 +45,6 @@ function showImage(index) {
 	}
 }
 
-//dis one no be venza pawon 
-
 
 // Keyboard navigation for desktop
 document.addEventListener('keydown', (e) => {
