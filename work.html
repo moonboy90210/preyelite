@@ -85,7 +85,7 @@
 			</div>
 		</nav>
 
-		<p class="px-4">Capturing moments, Creating Memories. Explore our latest photography projects.</p>
+		<p class="px-4" id="typing-text"></p>
 	</header>
 
 	<main class="container-fluid px-md-3 px-lg-5">
@@ -137,6 +137,23 @@
 		</div>
 	</footer>
 	<!-- Bootstrap JavaScript Libraries -->
+	 <script>
+		const text = `Capturing moments, Creating Memories. Explore our latest photography projects.`;
+
+		const typingDiv = document.getElementById('typing-text');
+		let index = 0;
+
+		function typeWriter() {
+			if (index < text.length) {
+				typingDiv.innerHTML += text.charAt(index);
+				index++;
+				setTimeout(typeWriter, 40); // Adjust typing speed here (lower is faster)
+			}
+		}
+
+		// Start typing after the page loads
+		window.onload = typeWriter;
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
 		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
 		crossorigin="anonymous"></script>
