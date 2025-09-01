@@ -45,6 +45,7 @@ function showImage(index) {
 	}
 }
 
+
 // Keyboard navigation for desktop
 document.addEventListener('keydown', (e) => {
 	if (!popup.classList.contains('hidden')) {
